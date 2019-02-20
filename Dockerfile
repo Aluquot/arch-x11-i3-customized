@@ -1,5 +1,4 @@
-ARG FROM_IMAGE=arch-x11-i3
-FROM $FROM_IMAGE
+FROM arch-x11-i3
 
 RUN pacman -S --noconfirm \
       firefox \
