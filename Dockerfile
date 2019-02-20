@@ -20,7 +20,7 @@ RUN pacman -S --noconfirm \
 ARG user=user
 ARG passwd=user
 ARG uid=1000
-RUN useradd ${user} -u $uid -p $passwd -m -G adm,dialout,cdrom,sudo,audio,dip,video,plugdev,netdev,docker -s /bin/bash
+RUN useradd ${user} -u $uid -p $passwd -m -G adm,audio,video,docker -s /bin/bash
 
 USER $user
 WORKDIR /home/$user
