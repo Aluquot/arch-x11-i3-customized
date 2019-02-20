@@ -4,6 +4,7 @@ RUN pacman -S --noconfirm \
       firefox \
       chromium \
       keepass \
+      docker \
       zsh; \
     echo 'user   ALL = NOPASSWD: ALL' >> /etc/sudoers; \
     su user -c 'cd; git clone https://aur.archlinux.org/pikaur.git'; \
